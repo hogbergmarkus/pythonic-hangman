@@ -12,6 +12,8 @@
     - [Goals of the user](#goals-of-the-user)
   - [User stories](#user-stories)
       - [Website owner](#website-owner)
+      - [General user](#general-user)
+      - [New user](#new-user)
 
 ## User goals
 
@@ -50,3 +52,25 @@
   settings will allow players to choose the setting they prefer.
 
 - The library of words must be large to help prevent repetition.
+
+### General user
+
+As a user I expect the game to run without errors.
+
+The game shows me progress, what letters I have used, and what letters I guessed correcly.
+
+If I make an input that is not valid, the game should tell me what went wrong and what
+
+was expected, without crashing.
+
+As I grow increasingly better at the game, I want to be able to pick between difficulty
+
+settings, that will provide longer or shorter words.
+
+### New user
+
+As a new user of the website, I expect to quickly understand how to play the game.
+
+My inputs, if I get something wrong, will not break the game, but instead tell me what
+
+went wrong and what was expected.
