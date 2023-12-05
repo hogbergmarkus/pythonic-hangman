@@ -146,3 +146,39 @@ def lives(lives_left):
         print("     |    / \\")
         print("     |")
         print("_____|_____")
+
+
+def main_game(word):
+    """
+    Main game loop.
+    """
+    correct_guesses = []
+    used_letters = []
+    lives_left = 8
+
+    while lives_left > 0:
+        word_field(word, correct_guesses)
+        print(f"\nUsed Letters: {', '.join(used_letters)}")
+        print(f"Lives Left: {lives_left}")
+        
+        guess = take_guess(used_letters)
+        if guess in word:
+            print("Correct!")
+            correct_guesses.append(guess)
+            used_letters.append(guess)
+        else:
+            print("Incorrect!")
+            lives_left -= 1
+            used_letters.append(guess)
+        if all(letter in correct_guesses for letter in word):
+            print(f"Congratulations! You guessed the word: {word}")
+            break
+    if lives_left == 0:
+        print(f"Sorry, you ran out of lives. The correct word was: {word}")
+
+
+def main():
+    selected_word = welcome_game_select()
+    main_game(selected_word)
+
+main()
