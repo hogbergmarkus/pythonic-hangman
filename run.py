@@ -71,3 +71,78 @@ def take_guess(used_letters):
                 return guess
         else:
             print(f"You entered {guess}, please enter a single letter, a-z.")
+
+
+def lives(lives_left):
+    """
+    Keep track of how many lives are left and draw the hangman.
+    Backslash info found here:
+    https://sites.pitt.edu/~naraehan/python3/mbb6.html
+    """
+    if lives_left == 8:
+        print("\n")
+    elif lives_left == 7:
+        print("\n")
+        print("\n_____|_____")
+    elif lives_left == 6:
+        print("\n")
+        print("\n     |")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 5:
+        print("\n")
+        print("\n     ______")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 4:
+        print("\n")
+        print("\n     ______")
+        print("     | /")
+        print("     |/")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 3:
+        print("\n")
+        print("\n     ______")
+        print("     | /   |")
+        print("     |/")
+        print("     |")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 2:
+        print("\n")
+        print("\n     ______")
+        print("     | /   |")
+        print("     |/    O")
+        print("     |     |")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 1:
+        print("\n")
+        print("\n     ______")
+        print("     | /   |")
+        print("     |/    O")
+        print("     |   --|--")
+        print("     |")
+        print("     |")
+        print("_____|_____")
+    elif lives_left == 0:
+        print("\n")
+        print("\n     ______")
+        print("     | /   |")
+        print("     |/    O")
+        print("     |   --|--")
+        print("     |    / \\")
+        print("     |")
+        print("_____|_____")
