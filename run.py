@@ -73,12 +73,15 @@ def take_guess(used_letters):
             print(f"You entered {guess}, please enter a single letter, a-z.")
 
 
-def lives(lives_left):
+def lives(lives_left, guess, word):
     """
     Keep track of how many lives are left and draw the hangman.
     Backslash info found here:
     https://sites.pitt.edu/~naraehan/python3/mbb6.html
     """
+    if guess not in word:
+        lives_left -= 1
+
     if lives_left == 8:
         print("\n")
     elif lives_left == 7:
@@ -170,6 +173,7 @@ def main_game(word):
             print("Incorrect!")
             lives_left -= 1
             used_letters.append(guess)
+            lives(lives_left, guess, word)
         if all(letter in correct_guesses for letter in word):
             print(f"Congratulations! You guessed the word: {word}")
             break
