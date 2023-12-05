@@ -14,6 +14,7 @@
       - [Website owner](#website-owner)
       - [General user](#general-user)
       - [New user](#new-user)
+  - [Design](#design)
 
 ## User goals
 
@@ -74,3 +75,9 @@ As a new user of the website, I expect to quickly understand how to play the gam
 My inputs, if I get something wrong, will not break the game, but instead tell me what
 
 went wrong and what was expected.
+
+## Design
+
+As part of the design process I layed out a flowshart for my codes logic,
+
+and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
