@@ -9,6 +9,7 @@
   - [Table of contents](#table-of-contents)
   - [User goals](#user-goals)
     - [Goals of the website](#goals-of-the-website)
+    - [Goals of the user](#goals-of-the-user)
 
 ## User goals
 
@@ -25,3 +26,11 @@
 - The game can be played multiple times due to a large amount of words supplied,
   
   and different difficulty settings.
+
+### Goals of the user
+
+- The user wants to play a word-based game with a large variety of words.
+
+- They want to be able to choose difficulty.
+
+- The game should be easy to understand.
