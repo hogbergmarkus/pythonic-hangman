@@ -55,3 +55,19 @@ def word_field(word, correct_guesses):
             print(f"{letter} ", end="")
         else:
             print("_ ", end="")
+
+
+def take_guess(used_letters):
+    """
+    Takes input from the user to guess the letters.
+    """
+    while True:
+        guess = input("Guess letter here: ")
+        if guess.isalpha() and len(guess) == 1:
+            if guess in used_letters:
+                print(f"You already guessed {guess}. Try a different letter.")
+            else:
+                print(f"You guessed {guess}")
+                return guess
+        else:
+            print(f"You entered {guess}, please enter a single letter, a-z.")
