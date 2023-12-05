@@ -10,6 +10,8 @@
   - [User goals](#user-goals)
     - [Goals of the website](#goals-of-the-website)
     - [Goals of the user](#goals-of-the-user)
+  - [User stories](#user-stories)
+      - [Website owner](#website-owner)
 
 ## User goals
 
@@ -34,3 +36,17 @@
 - They want to be able to choose difficulty.
 
 - The game should be easy to understand.
+
+## User stories
+
+### Website owner
+
+- As the owner of the website, I want to create a user-friendly game that is accessible
+  
+  to as many people as possible through sipmple user interface.
+
+- I want to tailor the game to people of different skill levels, so having difficulty
+  
+  settings will allow players to choose the setting they prefer.
+
+- The library of words must be large to help prevent repetition.
