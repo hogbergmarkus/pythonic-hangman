@@ -27,3 +27,16 @@ def welcome_game_select():
         word = game_word(7)
 
     return word
+
+
+def game_word(length):
+    """
+    Finds the correct length of word depending on game mode
+    and then selects a random one to be used for the game.
+    """
+    if length == 5 or length == 6:
+        game_words = [word for word in words if len(word) == length]
+    else:
+        game_words = [word for word in words if len(word) > 6]
+
+    return random.choice(game_words)
