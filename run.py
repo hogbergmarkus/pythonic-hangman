@@ -40,3 +40,18 @@ def game_word(length):
         game_words = [word for word in words if len(word) > 6]
 
     return random.choice(game_words)
+
+
+def word_field(word, correct_guesses):
+    """
+    Prints out _ for every letter in the word chosen for each game.
+    The underscores will act as placeholders for the letters until
+    the player guesses letters correctly.
+    end= parameter found here:
+    https://www.tutorialspoint.com/how-to-print-in-same-line-in-python
+    """
+    for letter in word:
+        if letter in correct_guesses:
+            print(f"{letter} ", end="")
+        else:
+            print("_ ", end="")
