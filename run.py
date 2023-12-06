@@ -64,7 +64,7 @@ def take_guess(used_letters):
     while True:
         guess = input("Guess letter here: ")
         if guess.isalpha() and len(guess) == 1:
-            if guess in used_letters:
+            if guess.upper() in used_letters:
                 print(f"You already guessed {guess.upper()}. Try a different letter.")
             else:
                 print(f"You guessed {guess.upper()}")
