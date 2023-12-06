@@ -1,4 +1,4 @@
-import random # Random doc. https://www.w3schools.com/python/module_random.asp
+import random  # Random doc. https://www.w3schools.com/python/module_random.asp
 from words import words
 
 
@@ -163,7 +163,7 @@ def main_game(word):
         word_field(word, correct_guesses)
         print(f"\nUsed Letters: {', '.join(used_letters)}")
         print(f"Lives Left: {lives_left}")
-        
+
         guess = take_guess(used_letters)
         if guess in word:
             print("Correct!")
@@ -184,5 +184,6 @@ def main_game(word):
 def main():
     selected_word = welcome_game_select()
     main_game(selected_word)
+
 
 main()
