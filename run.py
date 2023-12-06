@@ -39,7 +39,7 @@ def game_word(length):
     else:
         game_words = [word for word in words if len(word) > 6]
 
-    return random.choice(game_words)
+    return random.choice(game_words).upper()
 
 
 def word_field(word, correct_guesses):
@@ -68,7 +68,7 @@ def take_guess(used_letters):
                 print(f"You already guessed {guess.upper()}. Try a different letter.")
             else:
                 print(f"You guessed {guess.upper()}")
-                return guess
+                return guess.upper()
         else:
             print(f"You entered {guess}, please enter a single letter, a-z.")
 
