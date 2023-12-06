@@ -17,6 +17,8 @@
   - [Design](#design)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
+  - [Fixed bugs](#fixed-bugs)
+    - [Bug 1](#bug-1)
 
 ## User goals
 
@@ -93,3 +95,19 @@ When the game is played, the hangman diplays the wrong drawing.
 For example, when lives left are 6, the hangman for 5 lives is displayed.
 
 ![lives bug](documentation/images/lives_bug.png)
+
+## Fixed bugs
+
+### Bug 1
+
+I found an issue in the main game loop that caused this bug.
+
+I was calling the lives function, on line 176, that decrements lives_left,
+
+after I had already decremented the lives_left variable on line 174.
+
+![Bug 1 found](documentation/images/lives_bug_found.png)
+
+This was fixed by calling the lives function before I decrement the lives_left variable in the else statement.
+
+![Bug 1 fixed](documentation/images/lives_bug_fix.png)
