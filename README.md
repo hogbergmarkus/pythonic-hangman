@@ -15,6 +15,8 @@
       - [General user](#general-user)
       - [New user](#new-user)
   - [Design](#design)
+  - [Bugs](#bugs)
+    - [Bug 1](#bug-1)
 
 ## User goals
 
@@ -81,3 +83,13 @@ went wrong and what was expected.
 As part of the design process I layed out a flowshart for my codes logic,
 
 and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
+
+## Bugs
+
+### Bug 1
+
+When the game is played, the hangman diplays the wrong drawing.
+
+For example, when lives left are 6, the hangman for 5 lives is displayed.
+
+![lives bug](documentation/images/lives_bug.png)
