@@ -52,7 +52,7 @@ def word_field(word, correct_guesses):
     """
     for letter in word:
         if letter in correct_guesses:
-            print(f"{letter} ", end="")
+            print(f"{letter.upper()} ", end="")
         else:
             print("_ ", end="")
 
