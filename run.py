@@ -171,9 +171,9 @@ def main_game(word):
             used_letters.append(guess)
         else:
             print("Incorrect!")
-            lives_left -= 1
             used_letters.append(guess)
             lives(lives_left, guess, word)
+            lives_left -= 1
         if all(letter in correct_guesses for letter in word):
             print(f"Congratulations! You guessed the word: {word}")
             break
