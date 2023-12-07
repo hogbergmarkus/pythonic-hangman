@@ -14,7 +14,7 @@ def welcome_game_select():
     print("1 = Easy, 2 = Medium, 3 = Hard\n")
 
     while True:
-        game_select = input("Select game mode here:")
+        game_select = input("Select game mode here: ")
         if game_select == "1" or game_select == "2" or game_select == "3":
             break
         else:
@@ -51,6 +51,9 @@ def word_field(word, correct_guesses):
     end= parameter found here:
     https://www.tutorialspoint.com/how-to-print-in-same-line-in-python
     """
+    print("--------------------------------------------------------------")
+    print("")
+
     for letter in word:
         if letter in correct_guesses:
             print(f"{letter.upper()} ", end="")
@@ -210,6 +213,7 @@ def main_game(word):
             end_of_game()
 
     if lives_left == 0:
+        print("--------------------------------------------------------------\n")
         print(f"Sorry, you ran out of lives. The correct word was: {word}")
         end_of_game()
 
