@@ -70,10 +70,14 @@ def take_guess(used_letters):
         try:
             guess = input("Guess letter here: ")
             if not guess.isalpha() or len(guess) != 1:
-                raise ValueError(f"Enter a single letter A-Z, you entered {guess}")
+                raise ValueError(
+                    f"Enter a single letter A-Z, you entered {guess}"
+                    )
 
             if guess.upper() in used_letters:
-                print(f"You already guessed {guess.upper()}. Try a different letter.")
+                print(
+                    f"You already guessed {guess.upper()}. Try again!"
+                    )
             else:
                 print(f"You guessed {guess.upper()}")
                 return guess.upper()
