@@ -51,7 +51,7 @@ def word_field(word, correct_guesses):
     end= parameter found here:
     https://www.tutorialspoint.com/how-to-print-in-same-line-in-python
     """
-    print("--------------------------------------------------------------")
+    print("-----------------------------------------------------------")
     print("")
 
     for letter in word:
@@ -72,7 +72,7 @@ def take_guess(used_letters):
     """
     while True:
         try:
-            guess = input("Guess letter here: ")
+            guess = input("\nGuess letter here: ")
             if not guess.isalpha() or len(guess) != 1:
                 raise ValueError(
                     f"Enter a single letter A-Z, you entered {guess}"
@@ -187,6 +187,8 @@ def end_of_game():
 def main_game(word):
     """
     Main game loop.
+    Lives are displayed both with the hangman, and a number,
+    just to make it very clear how many tries you have left.
     """
     correct_guesses = []
     used_letters = []
@@ -213,12 +215,15 @@ def main_game(word):
             end_of_game()
 
     if lives_left == 0:
-        print("--------------------------------------------------------------\n")
+        print("-----------------------------------------------------------\n")
         print(f"Sorry, you ran out of lives. The correct word was: {word}")
         end_of_game()
 
 
 def main():
+    """
+    Start of the game, display welcome message and choose difficulty.
+    """
     selected_word = welcome_game_select()
     main_game(selected_word)
 
