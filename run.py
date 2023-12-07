@@ -60,17 +60,25 @@ def word_field(word, correct_guesses):
 def take_guess(used_letters):
     """
     Takes input from the user to guess the letters.
+    The try block raises a ValueError if input is not in alphabet,
+    or the length of the guess is longer than one letter.
+    After it checks if letter is already used.
+    The method isalpha found here:
+    https://www.w3schools.com/python/ref_string_isalpha.asp
     """
     while True:
-        guess = input("Guess letter here: ")
-        if guess.isalpha() and len(guess) == 1:
+        try:
+            guess = input("Guess letter here: ")
+            if not guess.isalpha() or len(guess) != 1:
+                raise ValueError(f"Enter a single letter A-Z, you entered {guess}")
+
             if guess.upper() in used_letters:
                 print(f"You already guessed {guess.upper()}. Try a different letter.")
             else:
                 print(f"You guessed {guess.upper()}")
                 return guess.upper()
-        else:
-            print(f"You entered {guess}, please enter a single letter, a-z.")
+        except ValueError as e:
+            print(f"Invalid input, {e}")
 
 
 def lives(lives_left, guess, word):
