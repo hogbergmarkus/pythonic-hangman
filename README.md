@@ -31,6 +31,8 @@ Have a go, see if you can guess the word, or if you get hung!
     - [User input guess](#user-input-guess)
     - [End of game](#end-of-game)
   - [Features to add](#features-to-add)
+  - [Testing](#testing)
+    - [Validation](#validation)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -169,6 +171,15 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 - Players could be able to choose how many lives they want to have.
 
 - Additional game modes could be added, for extra simple or difficult words.
+
+## Testing
+
+### Validation
+
+The code was run through [PEP8 Python Linter](https://pep8ci.herokuapp.com/)
+with no errors to show.
+
+![PEP8](documentation/images/pep8_validation.png)
 
 ## Bugs
 
