@@ -21,10 +21,13 @@ def welcome_game_select():
             print(f"Please select 1, 2 or 3. You pressed {game_select}")
 
     if game_select == "1":
+        print("You selected Easy, your word contains 5 letters.")
         word = game_word(5)
     elif game_select == "2":
+        print("You selected Medium, your word contains 6 letters.")
         word = game_word(6)
     else:
+        print("You selected Hard, your word contains 7 letters or more.")
         word = game_word(7)
 
     return word
