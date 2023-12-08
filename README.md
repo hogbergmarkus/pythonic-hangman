@@ -2,6 +2,15 @@
 
 ## Introduction
 
+[Pythonic Hangman](https://pythonic-hangman-0358ff7c5393.herokuapp.com/) is a fun text-based
+game of Hangman, that runs in a mock terminal on Heroku.
+
+You are able to choose from three difficulty levels, and depending on your choice,
+
+the length of the words to guess will be different.
+
+Have a go, see if you can guess the word, or if you get hung!
+
 ## Table of contents
 
 - [Hangman](#hangman)
