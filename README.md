@@ -33,6 +33,10 @@ Have a go, see if you can guess the word, or if you get hung!
   - [Features to add](#features-to-add)
   - [Testing](#testing)
     - [Validation](#validation)
+    - [Manual testing](#manual-testing)
+      - [Welcome and game select](#welcome-and-game-select)
+      - [Word selection](#word-selection)
+      - [Input validation](#input-validation)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -180,6 +184,36 @@ The code was run through [PEP8 Python Linter](https://pep8ci.herokuapp.com/)
 with no errors to show.
 
 ![PEP8](documentation/images/pep8_validation.png)
+
+### Manual testing
+
+Each Title under "Works" has been tested, and marked with an X for yes or no.
+
+#### Welcome and game select
+
+|Works           |YES |NO |
+|---------------|:---:|---|
+|Welcome screen  |X  |   |
+|Game mode Easy  |X  |   |
+|Game mode Medium|X  |   |
+|Game mode Hard  |X  |   |
+|Input Validation|X  |   |
+
+#### Word selection
+
+|Works                 |YES |NO |
+|---------------------|:---:|---|
+|Word selection Easy   |X   |   |
+|Word selection Medium |X   |   |
+|Word selection Hard   |X   |   |
+
+#### Input validation
+
+|Works                   |YES |NO |
+|------------------------|:---:|---|
+|Validate game select    |X   |   |
+|Validate guess letter   |X   |   |
+|Validate play again     |X   |   |
 
 ## Bugs
 
