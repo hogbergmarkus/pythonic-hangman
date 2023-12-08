@@ -14,7 +14,7 @@ def welcome_game_select():
     print("1 = Easy, 2 = Medium, 3 = Hard\n")
 
     while True:
-        game_select = input("Select game mode here: ")
+        game_select = input("Select game mode here: \n")
         if game_select == "1" or game_select == "2" or game_select == "3":
             break
         else:
@@ -72,7 +72,7 @@ def take_guess(used_letters):
     """
     while True:
         try:
-            guess = input("\nGuess letter here: ")
+            guess = input("\nGuess letter here: \n")
             if not guess.isalpha() or len(guess) != 1:
                 raise ValueError(
                     f"Enter a single letter A-Z, you entered {guess}"
@@ -197,20 +197,21 @@ def main_game(word):
     while lives_left > 0:
         word_field(word, correct_guesses)
         print(f"\nUsed Letters: {', '.join(used_letters)}")
-        print(f"Lives Left: {lives_left}")
+        print(f"\nLives Left: {lives_left}")
 
         guess = take_guess(used_letters)
         if guess in word:
-            print("Correct!")
+            print("\nCorrect!")
             correct_guesses.append(guess)
             used_letters.append(guess)
         else:
-            print("Incorrect!")
+            print("\nIncorrect!")
             used_letters.append(guess)
             lives(lives_left, guess, word)
             lives_left -= 1
 
         if all(letter in correct_guesses for letter in word):
+            print("--------------------------------------------------------\n")
             print(f"Congratulations! You guessed the word: {word}")
             end_of_game()
 
