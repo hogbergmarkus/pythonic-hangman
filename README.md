@@ -1,5 +1,7 @@
 # Hangman
 
+![Hangman game](documentation/images/game_image_introduction.png)
+
 ## Introduction
 
 [Pythonic Hangman](https://pythonic-hangman-0358ff7c5393.herokuapp.com/) is a fun text-based
