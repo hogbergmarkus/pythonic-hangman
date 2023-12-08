@@ -14,7 +14,7 @@ def welcome_game_select():
     print("1 = Easy, 2 = Medium, 3 = Hard\n")
 
     while True:
-        game_select = input("Select game mode here: \n")
+        game_select = input("Select game mode here:\n")
         if game_select == "1" or game_select == "2" or game_select == "3":
             break
         else:
@@ -72,7 +72,7 @@ def take_guess(used_letters):
     """
     while True:
         try:
-            guess = input("\nGuess letter here: \n")
+            guess = input("\nGuess letter here:\n")
             if not guess.isalpha() or len(guess) != 1:
                 raise ValueError(
                     f"Enter a single letter A-Z, you entered {guess}"
