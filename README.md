@@ -28,6 +28,7 @@ Have a go, see if you can guess the word, or if you get hung!
   - [Design](#design)
   - [Features](#features)
     - [Welcome screen and game select](#welcome-screen-and-game-select)
+    - [User input guess](#user-input-guess)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -112,6 +113,32 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 - If you do not enter a valid choice, the game will tell you, and then tell you what is expected.
 
 ![Validation game select](documentation/images/game_select_error_handling.png)
+
+### User input guess
+
+- The game checks that user input is valid, and if it is not, it tells the user what went wrong
+  
+  and what was expected. Then prompts the user to guess again.
+
+![User guess error](documentation/images/user_input_guess_error_handling.png)
+
+- Before the game checks if the letter is in the current game word,
+  
+  it checks to see if the letter has already been used.
+
+![Letter already used](documentation/images/user_guess_same_letter.png)
+
+- If the user guesses a letter that is not in the word, the game tells them they guessed incorrectly.
+  
+  The next stage of the hangman is drawn, they lose a life, and letter gets added to used letters.
+
+![User guess incorrect](documentation/images/user_guess_incorrect.png)
+
+- If the user guesses a letter that is in the word, the game tells them they were correct.
+  
+  No new hangman is drawn, they keep all their lives, letter gets added to used letters.
+
+![User guess correct](documentation/images/user_guess_correct.png)
 
 ## Bugs
 
