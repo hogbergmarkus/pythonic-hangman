@@ -29,6 +29,7 @@ Have a go, see if you can guess the word, or if you get hung!
   - [Features](#features)
     - [Welcome screen and game select](#welcome-screen-and-game-select)
     - [User input guess](#user-input-guess)
+    - [End of game](#end-of-game)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -139,6 +140,28 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
   No new hangman is drawn, they keep all their lives, letter gets added to used letters.
 
 ![User guess correct](documentation/images/user_guess_correct.png)
+
+### End of game
+
+- When the user win or lose the game, they will be asked if they want to play again.
+  
+  If they choose Y, the game will restart from the beginning.
+
+  If they choose N, a goodbye message is printed and the game will stop running.
+
+![End of game](documentation/images/end_of_game.png)
+
+- Here a new game was chosen to be played.
+
+![New game chosen](documentation/images/end_of_game_y.png)
+
+- Here the user chose to not play another game.
+
+![Chose to end game](documentation/images/end_of_game_n.png)
+
+- Input has to be valid, or the game will tell you what was expected, and what you entered.
+
+![End of game valid input](documentation/images/end_of_game_valid_input.png)
 
 ## Bugs
 
