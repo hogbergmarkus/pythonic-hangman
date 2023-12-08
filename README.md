@@ -30,6 +30,7 @@ Have a go, see if you can guess the word, or if you get hung!
     - [Welcome screen and game select](#welcome-screen-and-game-select)
     - [User input guess](#user-input-guess)
     - [End of game](#end-of-game)
+  - [Features to add](#features-to-add)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -162,6 +163,12 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 - Input has to be valid, or the game will tell you what was expected, and what you entered.
 
 ![End of game valid input](documentation/images/end_of_game_valid_input.png)
+
+## Features to add
+
+- Players could be able to choose how many lives they want to have.
+
+- Additional game modes could be added, for extra simple or difficult words.
 
 ## Bugs
 
