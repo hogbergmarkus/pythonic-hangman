@@ -41,6 +41,7 @@ Have a go, see if you can guess the word, or if you get hung!
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
     - [Bug 1](#bug-1)
+  - [Remaining bugs](#remaining-bugs)
 
 ## User goals
 
@@ -240,3 +241,7 @@ after I had already decremented the lives_left variable on line 174.
 This was fixed by calling the lives function before I decrement the lives_left variable in the else statement.
 
 ![Bug 1 fixed](documentation/images/lives_bug_fix.png)
+
+## Remaining bugs
+
+- I have not found any bugs that remains unfixed.
