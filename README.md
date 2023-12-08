@@ -26,6 +26,8 @@ Have a go, see if you can guess the word, or if you get hung!
       - [General user](#general-user)
       - [New user](#new-user)
   - [Design](#design)
+  - [Features](#features)
+    - [Welcome screen and game select](#welcome-screen-and-game-select)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -96,6 +98,20 @@ went wrong and what was expected.
 As part of the design process I layed out a flowshart for my codes logic,
 
 and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
+
+## Features
+
+### Welcome screen and game select
+
+- When you first open the game, a welcome message will greet you.
+
+- The game will then ask you to choose a difficulty level.
+
+![Welcome and game select](documentation/images/welcome_game_select.png)
+
+- If you do not enter a valid choice, the game will tell you, and then tell you what is expected.
+
+![Validation game select](documentation/images/game_select_error_handling.png)
 
 ## Bugs
 
