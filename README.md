@@ -31,6 +31,7 @@ Have a go, see if you can guess the word, or if you get hung!
     - [User input guess](#user-input-guess)
     - [End of game](#end-of-game)
   - [Features to add](#features-to-add)
+  - [Data model](#data-model)
   - [Testing](#testing)
     - [Validation](#validation)
     - [Manual testing](#manual-testing)
@@ -176,6 +177,22 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 - Players could be able to choose how many lives they want to have.
 
 - Additional game modes could be added, for extra simple or difficult words.
+
+## Data model
+
+The data model for this hangman game mainly uses strings and lists.
+
+- Depending on game mode chosen, the program will generate a list with words of a specific length,
+  
+  and then chose a random one from that list, to present for the user to guess.
+
+- The other lists keep track of player progress and are used to provide feedback.
+
+Other logic have also been implemented with validation for when the user tries to guess a letter,
+
+using a try/except statement.
+
+At the end of the game an option is presented to play again, and if no is chosen, the game will terminate.
 
 ## Testing
 
