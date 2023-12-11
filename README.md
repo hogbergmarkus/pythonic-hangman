@@ -44,6 +44,9 @@ Have a go, see if you can guess the word, or if you get hung!
   - [Fixed bugs](#fixed-bugs)
     - [Bug 1](#bug-1)
   - [Remaining bugs](#remaining-bugs)
+  - [Credits](#credits)
+    - [Words for the game](#words-for-the-game)
+    - [Websites](#websites)
 
 ## User goals
 
@@ -297,3 +300,16 @@ This was fixed by calling the lives function before I decrement the lives_left v
 ## Remaining bugs
 
 - I have not found any bugs that remains unfixed.
+
+## Credits
+
+### Words for the game
+
+The list of words used in this game, that are placed in the words.py file, was taken from Kathrin-ddggxh on Github.
+
+Link to project here: [Kathrin-ddggxh](https://github.com/Kathrin-ddggxh/CI-PP3_hangman/blob/main/words.py)
+
+### Websites
+
+[Tables Generator](https://www.tablesgenerator.com/markdown_tables#)
+was used to create the tables in this README file.
