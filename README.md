@@ -32,6 +32,7 @@ Have a go, see if you can guess the word, or if you get hung!
     - [End of game](#end-of-game)
   - [Features to add](#features-to-add)
   - [Data model](#data-model)
+  - [Deployment](#deployment)
   - [Testing](#testing)
     - [Validation](#validation)
     - [Manual testing](#manual-testing)
@@ -193,6 +194,36 @@ Other logic have also been implemented with validation for when the user tries t
 using a try/except statement.
 
 At the end of the game an option is presented to play again, and if no is chosen, the game will terminate.
+
+## Deployment
+
+The game was deployed to [Heroku](https://id.heroku.com/) using the following steps.
+
+1. After logging in to Heroku, from the dashboard, click "Create new app".
+
+2. Choose a name for the app, and I picked Europe for my region since I'm based here.
+
+3. In the next step, click the settings tab.
+
+4. Click "Reveal Config Vars". Set "Key" to PORT and "Value" to 8000.
+
+5. Click add buildpack, and add "heroku/python" first, followed by "heroku/nodejs".
+    
+   Make sure heroku/python is listed on top of heroku/nodejs.
+
+6. Go to the Deploy tab, and for Deployment method, choose Github.
+
+7. If It is the first time deploying to Heroku, confirm that you want to connect to GitHub.
+
+8. Search for the GitHub repository name you want to deploy, click connect next to the repository name.
+
+9. I chose to enable Automatic Deploys.
+
+10. I also then clicked Deploy Branch in the Manual Deploy section, with main chosen as branch.
+
+11. App was deployed successfully and I could click View, to go to my game.
+
+12. Here is the link to my deployed game: [Pythonic Hangman](https://pythonic-hangman-0358ff7c5393.herokuapp.com/)
 
 ## Testing
 
