@@ -3,6 +3,11 @@ import sys
 from words import words
 
 
+LEVEL_EASY = 5
+LEVEL_MEDIUM = 6
+LEVEL_HARD = 7
+
+
 def welcome_game_select():
     """
     Display welcome message and ask user to select game mode.
@@ -22,26 +27,26 @@ def welcome_game_select():
 
     if game_select == "1":
         print("You selected Easy, your word contains 5 letters.")
-        word = game_word(5)
+        word = game_word(LEVEL_EASY)
     elif game_select == "2":
         print("You selected Medium, your word contains 6 letters.")
-        word = game_word(6)
+        word = game_word(LEVEL_MEDIUM)
     else:
         print("You selected Hard, your word contains 7 letters or more.")
-        word = game_word(7)
+        word = game_word(LEVEL_HARD)
 
     return word
 
 
-def game_word(length):
+def game_word(difficulty_level):
     """
     Finds the correct length of word depending on game mode
     and then selects a random one to be used for the game.
     """
-    if length == 5 or length == 6:
-        game_words = [word for word in words if len(word) == length]
+    if difficulty_level == LEVEL_EASY or difficulty_level == LEVEL_MEDIUM:
+        game_words = [word for word in words if len(word) == difficulty_level]
     else:
-        game_words = [word for word in words if len(word) > 6]
+        game_words = [word for word in words if len(word) > LEVEL_MEDIUM]
 
     return random.choice(game_words).upper()
 
