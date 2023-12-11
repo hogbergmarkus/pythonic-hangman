@@ -122,12 +122,20 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 ### Welcome screen and game select
 
 - When you first open the game, a welcome message will greet you.
+  
+  This is useful to everyone visiting the website, to know what game is provided.
 
 - The game will then ask you to choose a difficulty level.
+  
+  This will help make the game stay fun for longer.
 
 ![Welcome and game select](documentation/images/welcome_game_select.png)
 
 - If you do not enter a valid choice, the game will tell you, and then tell you what is expected.
+  
+  If it is not clear to the user what to press, or they simply make a misstake,
+
+  this will help guide them.
 
 ![Validation game select](documentation/images/game_select_error_handling.png)
 
@@ -137,11 +145,17 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
   
   and what was expected. Then prompts the user to guess again.
 
+  This is useful both to prevent errors in the game, and to help the user if they don't understand.
+
 ![User guess error](documentation/images/user_input_guess_error_handling.png)
 
 - Before the game checks if the letter is in the current game word,
   
   it checks to see if the letter has already been used.
+
+  It is an extra help for users to see that they have already guessed that letter.
+
+  The same feature also prevents bugs, due to players not being able to guess the same letter twice.
 
 ![Letter already used](documentation/images/user_guess_same_letter.png)
 
@@ -149,11 +163,15 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
   
   The next stage of the hangman is drawn, they lose a life, and letter gets added to used letters.
 
+  This is useful to see game progress, and the hangman drawing is a nice visual effect.
+
 ![User guess incorrect](documentation/images/user_guess_incorrect.png)
 
 - If the user guesses a letter that is in the word, the game tells them they were correct.
   
   No new hangman is drawn, they keep all their lives, letter gets added to used letters.
+
+  This shows game progression.
 
 ![User guess correct](documentation/images/user_guess_correct.png)
 
@@ -164,6 +182,8 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
   If they choose Y, the game will restart from the beginning.
 
   If they choose N, a goodbye message is printed and the game will stop running.
+
+  This is especially useful to players who want an easy way to play multiple times.
 
 ![End of game](documentation/images/end_of_game.png)
 
@@ -176,6 +196,8 @@ and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
 ![Chose to end game](documentation/images/end_of_game_n.png)
 
 - Input has to be valid, or the game will tell you what was expected, and what you entered.
+  
+  This helps prevent errors.
 
 ![End of game valid input](documentation/images/end_of_game_valid_input.png)
 
