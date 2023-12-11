@@ -33,6 +33,7 @@ Have a go, see if you can guess the word, or if you get hung!
   - [Features to add](#features-to-add)
   - [Data model](#data-model)
   - [Languages](#languages)
+  - [Technologies used](#technologies-used)
   - [Deployment](#deployment)
   - [Testing](#testing)
     - [Validation](#validation)
@@ -207,6 +208,20 @@ Languages used in this project:
 1. Python
 
 2. Markdown
+
+## Technologies used
+
+- [Gitpod](https://www.gitpod.io/), cloud based IDE.
+
+- [Github](https://github.com/), for version control and documentation.
+
+- [Heroku](https://id.heroku.com/), for deployment.
+
+- [Lucidchart](https://www.lucidchart.com/pages/), for creating my flowchart.
+
+- [Slack](https://slack.com/), for communication and community.
+
+- [Google](https://www.google.com/), search tool.
 
 ## Deployment
 
