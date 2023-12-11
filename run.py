@@ -92,7 +92,7 @@ def take_guess(used_letters):
             print(f"Invalid input, {e}")
 
 
-def lives(lives_left, guess, word):
+def lives_display_hangman(lives_left, guess, word):
     """
     Keep track of how many lives are left and draw the hangman.
     Backslash info found here:
@@ -212,7 +212,7 @@ def main_game(word):
         else:
             print("\nIncorrect!")
             used_letters.append(guess)
-            lives(lives_left, guess, word)
+            lives_display_hangman(lives_left, guess, word)
             lives_left -= 1
 
         if all(letter in correct_guesses for letter in word):
