@@ -41,6 +41,7 @@ Have a go, see if you can guess the word, or if you get hung!
       - [Welcome and game select](#welcome-and-game-select)
       - [Word selection](#word-selection)
       - [Input validation](#input-validation)
+      - [End of game function](#end-of-game-function)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
   - [Fixed bugs](#fixed-bugs)
@@ -323,6 +324,13 @@ run agian after deployment to Heroku.
 |Validate game select    |X   |   |
 |Validate guess letter   |X   |   |
 |Validate play again     |X   |   |
+
+#### End of game function
+
+|Works      |YES |NO |
+|----------|:---:|---|
+|Play again |X   |   |
+|End game   |X   |   |
 
 ## Bugs
 
