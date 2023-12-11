@@ -32,6 +32,7 @@ Have a go, see if you can guess the word, or if you get hung!
     - [End of game](#end-of-game)
   - [Features to add](#features-to-add)
   - [Data model](#data-model)
+  - [Languages](#languages)
   - [Deployment](#deployment)
   - [Testing](#testing)
     - [Validation](#validation)
@@ -198,6 +199,14 @@ Other logic have also been implemented with validation for when the user tries t
 using a try/except statement.
 
 At the end of the game an option is presented to play again, and if no is chosen, the game will terminate.
+
+## Languages
+
+Languages used in this project:
+
+1. Python
+
+2. Markdown
 
 ## Deployment
 
