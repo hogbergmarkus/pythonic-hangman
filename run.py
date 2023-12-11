@@ -15,7 +15,7 @@ def welcome_game_select():
 
     while True:
         game_select = input("Select game mode here:\n")
-        if game_select == "1" or game_select == "2" or game_select == "3":
+        if game_select in ["1", "2", "3"]:
             break
         else:
             print(f"Please select 1, 2 or 3. You pressed {game_select}")
