@@ -174,7 +174,7 @@ def end_of_game():
     """
     Handles end of game and user can choose to play again or not.
     The exit function was found on stackoverflow:
-    https://stackoverflow.com/questions/40026651/how-to-stop-script-if-user-inputs-certain-characters-python
+    https://stackoverflow.com/questions/19747371/python-exit-commands-why-so-many-and-when-should-each-be-used/19747562#19747562
     """
     while True:
         play_again = input("\nWant to play again? Y/N\n")
@@ -192,6 +192,8 @@ def main_game(word):
     Main game loop.
     Lives are displayed both with the hangman, and a number,
     just to make it very clear how many tries you have left.
+    This site helped with the join method:
+    https://www.w3schools.com/python/ref_string_join.asp
     """
     correct_guesses = []
     used_letters = []

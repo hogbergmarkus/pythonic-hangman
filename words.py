@@ -1,7 +1,7 @@
 """
 This list of words was taken from "Kathrin-ddggxh" on Github,
 the project called CI-PP3_hangman.
-https://github.com/Kathrin-ddggxh/CI-PP3_hangman/blob/main/run.py
+https://github.com/Kathrin-ddggxh/CI-PP3_hangman/blob/main/words.py
 """
 words = [
     "aback",
