@@ -207,6 +207,10 @@ with no errors to show.
 
 Each Title under "Works" has been tested, and marked with an X for yes or no.
 
+Everything was tested continously throughout development, and all tests were
+
+run agian after deployment to Heroku.
+
 #### Welcome and game select
 
 |Works           |YES |NO |
