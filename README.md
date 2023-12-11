@@ -203,6 +203,10 @@ At the end of the game an option is presented to play again, and if no is chosen
 
 The game was deployed to [Heroku](https://id.heroku.com/) using the following steps.
 
+Since this project was deployed using Code Institute's mock terminal on Heroku, it is important
+
+that you follow these steps if you want to clone or fork this repository.
+
 1. After logging in to Heroku, from the dashboard, click "Create new app".
 
 2. Choose a name for the app, and I picked Europe for my region since I'm based here.
@@ -228,6 +232,8 @@ The game was deployed to [Heroku](https://id.heroku.com/) using the following st
 11. App was deployed successfully and I could click View, to go to my game.
 
 12. Here is the link to my deployed game: [Pythonic Hangman](https://pythonic-hangman-0358ff7c5393.herokuapp.com/)
+
+
 
 ## Testing
 
