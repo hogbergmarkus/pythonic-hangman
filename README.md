@@ -82,7 +82,7 @@ Have a go, see if you can guess the word, or if you get hung!
 
 - As the owner of the website, I want to create a user-friendly game that is accessible
   
-  to as many people as possible through sipmple user interface.
+  to as many people as possible through simple user interface.
 
 - I want to tailor the game to people of different skill levels, so having difficulty
   
@@ -116,7 +116,7 @@ went wrong and what was expected.
 
 As part of the design process I layed out a flowshart for my codes logic,
 
-and you can se it here: ![flowshart here.](documentation/flowshart/hangman.png)
+and you can see it here: ![flowshart here.](documentation/flowshart/hangman.png)
 
 ## Features
 
@@ -214,7 +214,7 @@ The data model for this hangman game mainly uses strings and lists.
 
 - Depending on game mode chosen, the program will generate a list with words of a specific length,
   
-  and then chose a random one from that list, to present for the user to guess.
+  and then choose a random one from that list, to present for the user to guess.
 
 - The other lists keep track of player progress and are used to provide feedback.
 
@@ -279,8 +279,6 @@ that you follow these steps if you want to clone or fork this repository.
 11. App was deployed successfully and I could click View, to go to my game.
 
 12. Here is the link to my deployed game: [Pythonic Hangman](https://pythonic-hangman-0358ff7c5393.herokuapp.com/)
-
-
 
 ## Testing
 
