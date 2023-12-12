@@ -99,7 +99,8 @@ def take_guess(used_letters):
 
 def lives_display_hangman(lives_left, guess, word):
     """
-    Draw a new hangman every time the user guesses wrong, until they win or lose.
+    Draw a new hangman every time the user guesses wrong,
+    until they win or lose.
     Backslash info found here:
     https://sites.pitt.edu/~naraehan/python3/mbb6.html
     """
